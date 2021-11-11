@@ -6,7 +6,7 @@ const SearchList = ({searchItems}) => {
     return (
     
     <ul> 
-    {searchItems.map((el) => < SearchItem searchItem = {el} key={el}/>)}
+        {searchItems.map((el) => < SearchItem searchItem = {el} key={el}/>)}
     </ul>     
     )}
     

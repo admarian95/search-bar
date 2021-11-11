@@ -1,8 +1,13 @@
-const SearchBar = ({keypressHandler,historyItemPush}) => {
 
+const SearchBar = ({keypressHandler,historyItemPush}) => {
     return (
-        <form onSubmit={historyItemPush}>
-            <input type='text' onKeyUp={(e)=>keypressHandler(e.target.value)}></input>
+        <form onSubmit={(e)=>historyItemPush(e)}>
+            <input 
+                type='text' 
+                list="results" 
+                placeholder="search a country"
+                onKeyUp={(e)=>keypressHandler(e.target.value)}
+            />
         </form>
     )
 }

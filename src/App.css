@@ -1,4 +1,6 @@
 .App {
+  width: 50%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -35,4 +37,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+.historyListItem{
+  background-color: #e2e2e2;
+  margin: 0 auto;
+}
+.historyListItem div{
+  display: inline-block;
+  width: 30%;
+  margin: 10px
+}
+.deleteHistoryItem{
+  color: red;
 }
